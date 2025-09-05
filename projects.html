@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Bilal Awad</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .projects-section.container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+    .project-card { display: grid; gap: 1rem; grid-template-columns: 1fr; margin-block: 1.5rem; }
+    @media (min-width: 900px) { .project-card { grid-template-columns: 1.1fr 1fr; align-items: start; } }
+    .project-media img { width: 100%; height: auto; display: block; border-radius: 10px; }
+    .media-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin-top: 10px; }
+    .project-info h3 { margin: 0 0 0.5rem; }
+    .project-dates { font-style: italic; margin-bottom: 0.5rem; }
+    .project-tools { margin-top: 0.5rem; }
+    .tool-badges { display: flex; flex-wrap: wrap; gap: .4rem .6rem; padding: 0; list-style: none; }
+    .tool-badges li { background: #f1f3f5; padding: .25rem .5rem; border-radius: 999px; font-size: .85rem; }
+    .btn-link { display: inline-block; margin-top: .75rem; text-decoration: none; padding: .5rem .75rem; border: 1px solid #ddd; border-radius: 8px; }
+    header nav { display: flex; justify-content: space-between; align-items: center; padding: .75rem 1rem; }
+    header nav ul { display: flex; gap: .75rem; list-style: none; padding: 0; margin: 0; }
+    header nav a { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Eng. Bilal Awad</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+		<li><a href="education.html">Education</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+		<li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="projects-section container">
+      <h2>Projects</h2>
+
+      <!-- Project 1 -->
+      <article class="project-card">
+        <div class="project-info">
+          <h3>Implementation of Neural Networks on FPGA Using HLS</h3>
+          <p class="project-dates">2025</p>
+          <p>Thesis project on implementing neural networks using FPGA with High-Level Synthesis (HLS). I explored how to optimize and deploy a deep learning model on a low-power FPGA platform using HLS to achieve real-time performance with reduced energy consumption for edge AI applications.</p>
+          <div class="project-tools">
+            <span class="tools-label">Skills and Tools used:</span>
+            <ul class="tool-badges">
+              <li>FPGA</li><li>HLS</li><li>Tensorflow</li><li>Pytorch</li><li>Python</li>
+            </ul>
+          </div>
+          <div class="project-links">
+            <a href="Pdfs\thesis.pdf" target="_blank" class="btn-link">📄 View Thesis Report</a>
+          </div>
+        </div>
+        <div class="project-media">
+          <img src="Photos\11.jpeg" alt="FPGA NN accelerator board close-up" />
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <div class="project-info">
+          <h3>Hand-Gesture Controlled Wall-Climbing Robot</h3>
+          <p class="project-dates">2023</p>
+          <p>Design of a robot capable of climbing walls using an inverted propeller to create suction. The robot receives hand signals (forward/backward/left/right) via RX-TX communication between an Arduino on the robot and another on the hand.</p>
+          <div class="project-tools">
+            <span class="tools-label">Tools used:</span>
+            <ul class="tool-badges">
+              <li>Arduino</li><li>Control Systems</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card">
+        <div class="project-info">
+          <h3>Self-Balancing Robot</h3>
+          <p class="project-dates">2023</p>
+          <p>A two-wheeled self-balancing robot uses a gyroscope to detect tilt, with MATLAB handling simulation and control optimization, while an Arduino processes sensor data in real time to drive the motors and maintain balance.</p>
+          <div class="project-tools">
+            <span class="tools-label">Tools used:</span>
+            <ul class="tool-badges">
+              <li>Arduino</li><li>MATLAB</li><li>SimuLink</li><li>PID Control</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-media">
+          <img src="Photos\10.jpeg" alt="Self-balancing robot in action" />
+          <div class="media-grid">
+            <img src="Photos\8.jpeg" alt="PID tuning plot" />
+            <img src="Photos\9.jpeg" alt="Frame and wheels" />
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card">
+        <div class="project-info">
+          <h3>Dual-Axis Solar Tracker</h3>
+          <p class="project-dates">2023</p>
+          <p>Designed and implemented a dual-axis solar tracker, demonstrating expertise in renewable energy systems and precision control for maximizing solar energy harvesting efficiency.</p>
+          <div class="project-tools">
+            <span class="tools-label">Tools used:</span>
+            <ul class="tool-badges">
+              <li>Arduino</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project-card">
+        <div class="project-info">
+          <h3>Finding Shortest Path Robot</h3>
+          <p class="project-dates">2022</p>
+          <p>This project uses an Arduino board programmed with path-planning algorithms to guide a robot from a starting point to a target while avoiding obstacles, ensuring it always follows the shortest and most efficient route.</p>
+          <div class="project-tools">
+            <span class="tools-label">Tools used:</span>
+            <ul class="tool-badges">
+              <li>Arduino</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-media">
+          <img src="Photos\2.jpeg" alt="Shortest-path robot" />
+          <img src="Photos\1.jpeg" alt="Robot top view" />
+        </div>
+      </article>
+
+    </section>
+  </main>
+</body>
+</html>

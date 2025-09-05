@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience - Bilal Awad</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Match Projects page styles */
+    .projects-section.container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+    .project-card { display: grid; gap: 1rem; grid-template-columns: 1fr; margin-block: 1.5rem; }
+    @media (min-width: 900px) { .project-card { grid-template-columns: 1.1fr 1fr; align-items: start; } }
+    .project-media img { width: 100%; height: auto; display: block; border-radius: 10px; }
+    .media-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin-top: 10px; }
+    .project-info h3 { margin: 0 0 0.5rem; }
+    .project-tools { margin-top: 0.5rem; }
+    .tool-badges { display: flex; flex-wrap: wrap; gap: .4rem .6rem; padding: 0; list-style: none; }
+    .tool-badges li { background: #f1f3f5; padding: .25rem .5rem; border-radius: 999px; font-size: .85rem; }
+    header nav { display: flex; justify-content: space-between; align-items: center; padding: .75rem 1rem; }
+    header nav ul { display: flex; gap: .75rem; list-style: none; padding: 0; margin: 0; }
+    header nav a { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Eng. Bilal Awad</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+		<li><a href="education.html">Education</a></li>
+		<li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="projects-section container">
+      <h2>Experience</h2>
+
+		<!-- Experience 1 -->
+		<article class="project-card">
+		<div class="project-info">
+		<h3>Intern – UNDP Renewable Energy Program</h3>
+		<p class="project-dates">June 2022 – August 2022</p>
+		<ul>
+		<li>Constructed solar water heating systems for residential applications.</li>
+		<li>Sized panels, inverters, and batteries for optimal performance.</li>
+		<li>Mounted panels on suitable structures and selected appropriate balance-of-system (BOS) components.</li>
+		<li>Applied knowledge in a Solar Pump Project to improve my village’s central water pump.</li>
+		<li>Completed a Career Readiness Program focused on soft skills development for future career growth.</li>
+		</ul>
+		<div class="project-tools">
+		<span class="tools-label">Skills learned:</span>
+		<ul class="tool-badges">
+		<li>Renewable Energy</li><li>Solar Systems</li><li>System Design</li><li>Team Work</li>
+		</ul>
+		</div>
+		</div>
+		<div class="project-media">
+		<img src="Photos\7.jpeg" alt="UNDP renewable energy internship project" />
+		<div class="media-grid">
+		<img src="Photos\5.jpeg" alt="Solar panel installation" />
+		<img src="Photos\3.jpeg" alt="System schematic" />
+		</div>
+		</div>
+		</article>
+
+		<!-- Experience 2 -->
+		<article class="project-card">
+		<div class="project-info">
+		<h3>Arduino Designer</h3>
+		<p class="project-dates">2022 – Present</p>
+		<p>Built robots and control systems including shortest-path robot and self-balancing systems. Developed innovative solar sunlight tracking mechanisms and wall-climbing robots.</p>
+		<div class="project-tools">
+		<span class="tools-label">Skills learned:</span>
+		<ul class="tool-badges">
+		<li>Arduino</li><li>Robotics</li><li>Control Systems</li>
+		</ul>
+		</div>
+		</div>
+		<div class="project-links">
+		<a href="projects.html" class=\"btn-link\">⬅ Back to Projects</a>
+		</div>
+		</article>
+      <!-- Experience 3 -->
+<!-- Experience 3 -->
+<article class="project-card">
+<div class="project-info">
+<h3>Private Tutor</h3>
+<p class="project-dates">2019 – Present</p>
+<p>I began by teaching school students from different grades, later expanding to online tutoring for university students. I have taught students from Cardiff University, Liverpool University, Sheffield Hallam University, Swansea University, and many others across the UK. My students have achieved a success rate of more than 95% under my guidance in electronics, robotics, and engineering fundamentals.</p>
+<div class="project-tools">
+<span class="tools-label">Skills learned:</span>
+<ul class="tool-badges">
+  <li>Communication</li>
+  <li>Patience</li>
+  <li>Subject Mastery</li>
+  <li>Problem-Solving</li>
+  <li>Time Management</li>
+  <li>Mentoring</li>
+</ul>
+</div>
+</div>
+</article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bilal Awad. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Bilal Awad</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-section.container { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; text-align: center; }
+    .contact-section h2 { margin-bottom: 1.5rem; font-size: 2rem; }
+    .contact-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    .contact-card { background: #f9f9f9; padding: 1.25rem; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.08); transition: transform 0.2s ease; }
+    .contact-card:hover { transform: translateY(-4px); }
+    .contact-card h3 { margin-bottom: 0.5rem; font-size: 1.2rem; }
+    .contact-card a { text-decoration: none; color: #0077b5; word-break: break-word; }
+    .contact-card p { margin: 0.25rem 0; }
+    .icon { font-size: 2rem; margin-bottom: 0.5rem; display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Eng. Bilal Awad</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+		<li><a href="education.html">Education</a></li>
+		<li><a href="projects.html">Projects</a></li>
+		<li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+     <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section container">
+      <h2>Get in Touch</h2>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <span class="icon">📧</span>
+          <h3>Email</h3>
+          <a href="mailto:awad.b.m@outlook.com">awad.b.m@outlook.com</a>
+        </div>
+
+        <div class="contact-card">
+          <span class="icon">📱</span>
+          <h3>Phone</h3>
+          <p>Italy: +39 344 479 5617</p>
+          <p>Lebanon: +961 81 663 425</p>
+        </div>
+
+        <div class="contact-card">
+          <span class="icon">💼</span>
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/bilal-awad-190534240" target="_blank">linkedin.com/in/bilal-awad</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bilal Awad. All rights reserved.</p>
+  </footer>
+</body>
+</html>
